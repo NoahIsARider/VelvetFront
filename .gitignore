@@ -1,0 +1,12 @@
+node_modules/
+dist/
+release/
+release-*/
+.build-cache/
+artifacts/
+.playwright-mcp/
+.pnpm-store/
+*.log
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts

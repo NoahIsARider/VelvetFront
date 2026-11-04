@@ -1,0 +1,51 @@
+{
+  "name": "velvet-front",
+  "version": "0.9.2",
+  "private": true,
+  "description": "An original hand-drawn 2D anti-war tactics campaign.",
+  "author": "Velvet Front Studio",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "desktop": "concurrently -k \"vite --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && electron .\"",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "package:win": "pnpm build && electron-builder --win zip"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "concurrently": "latest",
+    "electron": "latest",
+    "electron-builder": "latest",
+    "jsdom": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vite-plugin-electron": "latest",
+    "vitest": "latest",
+    "wait-on": "latest"
+  },
+  "build": {
+    "appId": "studio.velvetfront.game",
+    "productName": "Velvet Front",
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "target": "zip",
+      "icon": "public/assets/velvet-front-icon.png",
+      "artifactName": "Velvet-Front-${version}-win.${ext}"
+    }
+  }
+}
