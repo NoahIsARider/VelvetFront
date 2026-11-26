@@ -1,5 +1,7 @@
 # Velvet Front
 
+> **Status: in development.** This is an early build, not a finished campaign. The painted art and the interface are further along than the balance, the enemy behaviour and the chapter scripting underneath them, and every number in the current release can still change. Download it as a look at where the game is going.
+
 **A hand-drawn anti-war tactics game about rabbits who were told the war is holy.**
 
 Velvet Front is a small top-down tactics campaign for Windows. You command a squad of Bluecap rabbit infantry through six operations of a holy war that the Ministry has already lost. Every battle is winnable and every victory makes the lie a little more useful to the people who ordered it.
